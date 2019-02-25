@@ -50,13 +50,13 @@ img {
 .navbar__button {
   margin-left: 30px;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 700;
 }
 .navbar__phone {
   display: block;
   color: #333333;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 700;
   text-decoration: none;
   margin-top: 9px;
 }
