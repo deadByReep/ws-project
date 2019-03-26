@@ -2,7 +2,7 @@ var webPush = require('web-push');
 
 // Про GCM_API_KEY вы можете подробнее узнать из
 // https://developers.google.com/cloud-messaging/
-webPush.setGCMAPIKey(process.env.AIzaSyDKMjlJT84OUdkn46UpgGIjoxCsFpnUurk || null);
+webPush.setGCMAPIKey(process.env.AAAA8q0wFaw:APA91bGNaST50Bfp4anHbFBDsEiVk2X8y5b61oH0_Cv6RFWq_5b7Xj2vARHYifmKK7-55hKv2irL6x6bLfZ9mSG5vjyzrDC-ArMJFJQTUshuM_NMj5yOMT8_9dbzdph1oIa8Ph_-L3ty || null);
 // В данном примере мы будем рассматривать только route'ы в express.js
 module.exports = function(app, route) {
   app.post(route + 'register', function(req, res) {
