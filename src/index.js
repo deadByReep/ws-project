@@ -43,26 +43,3 @@ navigator.serviceWorker.register('service-worker.js')
     }),
   });
 });
-
-// Для демонстрации функционала.
-// Данный код на "Боевых" приложениях не нужен, т.к. генерация уведомлений всегда происходит на сервере.
-document.getElementById('doIt').onclick = function() {
-  var payload = document.getElementById('notification-payload').value;
-  var delay = document.getElementById('notification-delay').value;
-  var ttl = document.getElementById('notification-ttl').value;
- 
-  fetch('./sendNotification', {
-    method: 'post',
-    headers: {
-      'Content-type': 'application/json'
-    },
-    body: JSON.stringify({
-      endpoint: endpoint,
-      payload: payload,
-      delay: delay,
-      ttl: ttl,
-      key: key,
-      authSecret: authSecret
-    }),
-  });
-};
